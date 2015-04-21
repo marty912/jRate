@@ -69,7 +69,7 @@ Demo: http://www.toolitup.com/JRate.html
 
         function setRating(rating) {
             if (!isDefined(rating) || rating < settings.min || rating > settings.max)
-                throw rating + " is not in range(" + min + "," + max + ")";
+                throw rating + " is not in range(" + settings.min + "," + settings.max + ")";
             showRating(rating);
         }
 
